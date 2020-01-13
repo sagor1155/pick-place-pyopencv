@@ -1,0 +1,12 @@
+
+1. import pyqt4
+2. use QThread for serial receive
+3. use signal & slot to get data
+4. Multithread
+5. wait for input(com port) when program begins
+6. create a function in Serial class for getComPort() which waits for COM PORT raw_input
+   and stores the COM PORT name to a global variable within the class 
+7. main function calls getComPort() function of serial class at the begining of the
+   program, without valid COM PORT program doesn't starts and shows failure notification
+8. create a command parser for Arduino to decode the commands from Python
+9. determine ARM Center (Xc, Yc) 
